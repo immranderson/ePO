@@ -8,6 +8,10 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.util.PDFTextStripperByArea;
 
+
+/* This class goes through a single purchase order and scrapes the data
+ * 
+ */
 public class ePOData {
 
 

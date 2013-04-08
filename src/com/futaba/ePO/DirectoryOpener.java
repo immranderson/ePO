@@ -9,7 +9,6 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 public class DirectoryOpener {
 
-
 	private String filename;
 
 	public DirectoryOpener()
@@ -58,9 +57,5 @@ public class DirectoryOpener {
 		return this.filename;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

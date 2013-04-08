@@ -50,7 +50,7 @@ public class GenerateExcelDocument {
 
 
 
-			//Headers
+			//Headers of Excel Spreadsheet
 
 
 
@@ -300,45 +300,6 @@ public class GenerateExcelDocument {
 		XSSFWorkbook wbRead = new XSSFWorkbook(fileRead);
 
 
-
-//		for (int sheet=0 ; sheet<16 ; sheet++)
-//		{
-//			temp_cell = CV.Search("Piece Price", wbRead, sheet);
-//			piece_price_column = temp_cell.getColumnIndex();
-//			rowRead = temp_cell.getRowIndex()+1;
-//			do
-//			{
-//				temp_read = CV.Read(wbRead, sheet, rowRead, piece_price_column);
-//				temp_read = temp_read.replace("$", "");
-//				CV.Write(temp_read, wbRead, sheet, rowRead, piece_price_column);
-//
-//				rowRead++;
-//			}
-//			while (!temp_read.equals(""));
-//
-//
-//			temp_cell = CV.Search("Effective Date", wbRead, sheet);
-//			effective_date_column = temp_cell.getColumnIndex();
-//			rowRead = temp_cell.getRowIndex()+1;
-//
-//			do
-//			{
-//				temp_read = CV.Read(wbRead, sheet, rowRead, effective_date_column);
-//				temp_read = temp_read.replace("     /  /  ", "");
-//				temp_read = temp_read.replace(": THRU", "");
-//				if (temp_read.length()>10)
-//				{
-//					temp_read = temp_read.substring(0, 10) + " THRU" + temp_read.substring(10,21);
-//				}
-//
-//				CV.Write(temp_read, wbRead, sheet, rowRead, effective_date_column);
-//
-//				rowRead++;
-//			}
-//			while (!temp_read.equals(""));
-
-
-//		}
 
 		FileOutputStream fileSave = new FileOutputStream(GUI.outputdirectoryname + "\\" + "Price Update Sheet.xlsx");
 		wbRead.write(fileSave);
