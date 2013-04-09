@@ -185,8 +185,8 @@ public class GenerateFoldersAndMove {
 		FileCopy.copy(data.getFileName(), email_sub_directory_name);		
 
 		
-		ZipThatShit.zipFolder(GUI.outputdirectoryname + "\\" + apr_folder + "\\" + subfolder, GUI.outputdirectoryname + "\\" + apr_folder + "\\" + subfolder + ".zip");
-		ZipThatShit.zipFolder(GUI.outputdirectoryname + "\\" + "email" + "\\" + subfolder, GUI.outputdirectoryname + "\\" + "email" + "\\" + subfolder + ".zip");
+		ZipThatFile.zipFolder(GUI.outputdirectoryname + "\\" + apr_folder + "\\" + subfolder, GUI.outputdirectoryname + "\\" + apr_folder + "\\" + subfolder + ".zip");
+		ZipThatFile.zipFolder(GUI.outputdirectoryname + "\\" + "email" + "\\" + subfolder, GUI.outputdirectoryname + "\\" + "email" + "\\" + subfolder + ".zip");
 		
 			
 	}

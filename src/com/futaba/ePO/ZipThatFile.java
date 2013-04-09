@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public class ZipThatShit {
+public class ZipThatFile {
 
   static public void zipFolder(String srcFolder, String destZipFile) throws Exception {
     ZipOutputStream zip = null;
